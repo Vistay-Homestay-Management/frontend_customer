@@ -1,5 +1,11 @@
 # ViStay Customer Web
 
-React web application for ViStay customers.
+Customer React application for discovery, booking, stay management, and
+account self-service. It talks only to Gateway and the Apollo Federation
+endpoint.
 
-This repository is part of the ViStay Homestay Management platform. Epic 1 establishes a buildable, testable application shell and platform integrations; domain workflows are delivered by their owning epics.
+```powershell
+Copy-Item .env.example .env.local
+npm install
+npm run dev
+```
