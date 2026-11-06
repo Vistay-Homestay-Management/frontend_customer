@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight, CalendarBlank, MapPin, Users } from '@phosphor-icons/react'
 import './App.css'
+import { LoyaltyStatus } from './LoyaltyStatus'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -108,6 +109,7 @@ function App() {
       </section>
 
       <section className="marquee" aria-label="Giá trị ViStay"><div>ĐẶT NHANH — HỖ TRỢ THẬT — Ở THẬT THOẢI MÁI — ĐẶT NHANH — HỖ TRỢ THẬT —</div></section>
+      <LoyaltyStatus />
       <footer>
         <div><h2>Sẵn sàng tìm căn cho chuyến đi tiếp theo?</h2><a className="button button-light" href="#search">Bắt đầu tìm kiếm <ArrowRight /></a></div>
         <p>ViStay Homestay Management · Đà Nẵng</p>
