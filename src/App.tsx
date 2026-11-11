@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight, CalendarBlank, MapPin, Users } from '@phosphor-icons/react'
 import './App.css'
 import { LoyaltyStatus } from './LoyaltyStatus'
+import { ProfileLinking } from './ProfileLinking'
+import { PortalSession } from './PortalSession'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
@@ -36,6 +38,8 @@ function App() {
 
   return (
     <main ref={root} className="site-shell">
+      <PortalSession />
+      <ProfileLinking />
       <nav className="nav" aria-label="Điều hướng chính">
         <a className="brand" href="#top" aria-label="ViStay trang chủ">ViStay<span>.</span></a>
         <div className="nav-links"><a href="#stays">Không gian</a><a href="#promise">Trải nghiệm</a></div>
