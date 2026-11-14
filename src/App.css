@@ -92,3 +92,18 @@ footer>p { color:rgba(255,255,255,.45); }
   .story-copy { position:static; }
   footer>div { align-items:flex-start; flex-direction:column; }
 }
+
+.profile-linking { margin: 18px 0 28px; padding: 22px; border: 1px solid rgba(18,84,79,.2); border-radius: 12px; background: linear-gradient(135deg,#f4f8f1,#dbe9d5); color:#092328; display:grid; grid-template-columns:minmax(220px,1fr) minmax(280px,1fr); gap:20px; align-items:center; }
+.profile-linking h2 { margin:5px 0 7px; font-size:clamp(1.4rem,2.4vw,2.2rem); }
+.profile-linking p { margin:0; color:#48615b; line-height:1.5; }
+.profile-linking > div > span { color:#2a835f; font-size:.68rem; font-weight:700; letter-spacing:.12em; }
+.profile-linking-form { display:grid; gap:9px; }
+.profile-linking-form input { min-height:44px; padding:0 13px; border:1px solid rgba(18,84,79,.22); border-radius:8px; background:#fff; color:#092328; }
+.profile-linking-form button { min-height:44px; border:0; border-radius:8px; background:#12544f; color:#fff; font-weight:700; cursor:pointer; }
+.profile-linking-form button:disabled { opacity:.55; cursor:not-allowed; }
+.profile-linking-error { grid-column:1/-1; padding:10px 12px; border-radius:8px; background:#fff0e8; color:#9b422e !important; }
+@media (max-width:720px) { .profile-linking { grid-template-columns:1fr; } }
+.portal-session { margin:12px 0; padding:10px 12px; border:1px solid rgba(18,84,79,.18); border-radius:9px; background:#fff; color:#12544f; display:flex; align-items:center; justify-content:flex-end; gap:9px; font-size:.76rem; }
+.portal-session button { min-height:34px; padding:0 11px; border:0; border-radius:7px; background:#12544f; color:#fff; font-weight:700; cursor:pointer; }
+.portal-session button.secondary { border:1px solid rgba(18,84,79,.24); background:#edf4ea; color:#12544f; }
+.portal-session.error { color:#9b422e; }
