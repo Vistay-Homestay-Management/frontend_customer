@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from 'react-oidc-context'
+import { runtimeConfig } from './lib/runtimeConfig'
 
 type LinkState = {
   linkId: string | null
@@ -13,7 +14,7 @@ type LinkState = {
 
 async function graphQl<T>(token: string, query: string, variables: Record<string, unknown>): Promise<T> {
   if (!token) throw new Error('Bạn cần đăng nhập trước khi liên kết hồ sơ.')
-  const response = await fetch(import.meta.env.VITE_GRAPHQL_URL ?? '/graphql', {
+  const response = await fetch(runtimeConfig.graphqlUrl || import.meta.env.VITE_GRAPHQL_URL || '/graphql', {
     method: 'POST',
     headers: {
       authorization: `Bearer ${token}`,
